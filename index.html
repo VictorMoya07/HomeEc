@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Prueba Front-End</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	
+	<!---jQUERY-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!--SLIDER Plugins-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  	
+  	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  	<!--- Mis scripts-->
+  	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+	<header>
+		<div class="inf-util">
+				<img id="sucursales" src="images/sprite.png" alt="">
+				<a href="#">SUCURSALES</a>
+				<img id="comocomprar" src="images/sprite.png" alt="">
+				<a href="#" >COMO COMPRAR</a>
+				<a href="#">MIS PEDIDOS</a>
+		</div>
+
+		<div class="logo-bus-ofer">
+				<div class="logo">
+					<img src="images/logo2.jpg" alt="">
+				</div>
+
+		<div class="buscador">
+					
+			<div class="form campo_de_texto">
+      			<input type="text" value="Buscar por productos,deportes o marcas...">
+    		</div>
+  
+  			<div class="form boton">
+    			<button type="submit"><img id="buscar" src="images/sprite.png" alt=""></button>
+  			</div>
+		</div>
+
+			<div class="publicidad">
+				<img src="images/HeaderHomeAbril.gif" alt="">
+			</div>
+		</div>
+	</header>
+<div class="full-contenedor"><!--Utilizo un div full container para poder mostrar el menu en todo el width de la pantalla-->
+		
+	<div class="medio-contenedor"><!--Utilizo un div full medio que contendra los estilos de width del header, para poder centrarlo-->
+
+		<nav class="menu">
+			<a href="#" id="hombre">HOMBRE</a>
+			<a href="#">MUJER</a>
+			<a href="#">NIÑOS</a>
+		</nav>
+		
+		<div class="carrito">
+			<p>Carrito <img id="carrito" src="images/sprite.png" alt=""> 0 $ 0,00</p>
+		</div>
+	</div>
+</div>
+<!--Realizo un div donde coloco los filtros desplegables del "Menu" esto lo enlazo mediante un evento click con jquery-->
+	<div class="contenedor-infmenu">
+		<div id="infmenu" class="infmenu">
+			<div class="submenu">
+				<h3>CALZADO</h3>
+				<ul>
+					<li><a href="#" id="botines">Botines</a></li>
+					<li><a href="#">Zapatillas</a></li>
+					<li><a href="#">Botines con tapones</a></li>
+					<li><a href="#">Ojotas/Chinelas</a></li>
+					<li><a href="#">Sandalia</a></li>
+					<li><a href="#"><span>Ver Mas <img id="vermas" src="images/sprite.png" alt=""></span></a></li>
+				</ul>
+			</div>
+
+			<div class="infsubmenu" id="infsubmenu">
+				<img id="imgbotines" src="images/005030000D65804_1.jpg" alt="Img">
+				<h2>BOTINES ADIDAS ADILINER</h2>
+				<p>$ 109,00</p>
+				<img class="adidas1" src="images/sprite.png" alt="">
+			</div>
+		</div>
+	</div>
+<main	
+	<section class="sli-mar">
+		
+		<div id="slider">
+			<div class="galeria">
+  				<div><img src="images/racing-980x400.jpg" title=""></div>
+  				<div><img src="images/evoACCURACY_980x400px.jpg" title=""></div>
+  				<div><img src="images/racing-980x400.jpg" title=""></div>
+			</div>
+		</div>
+		
+		<div class="marcas" id="marcas">
+			<img src="images/marcas.jpg" alt="" id="marcasimg">
+		</div>
+
+	</section>
+
+	<section class="Listadeproductos">
+			
+		<aside class="filtros">
+			<h5>FILTRO POR</h5><br>
+			<button class="boton-desple" id="desple-sexo" >SEXO <img class="icosexo"src="images/sprite.png" alt=""></button> 
+    				
+  			<div class="cont-desple" id="cont-desple">
+    			<form action="#">
+					<input type="checkbox"  value="Hombre"> Hombre
+				<br>
+					<input type="checkbox"  value="Mujer"> Mujer
+				<br>
+					<input type="checkbox"  value="Niños"> Niños 
+				<br>
+  			</div>
+  			<button class="boton-desple">DEPORTE <img class="icosexo"src="images/sprite.png" alt=""></button> 
+    		<button class="boton-desple">COLOR<img class="icosexo"src="images/sprite.png" alt=""></button> 
+    	</aside>
+	</section>
+
+
+	<section class="productos">
+		<!---Traigo los los productos desde la variable products-->
+    </section>
+
+</main>
+
+<footer>
+	<p>Prueba Hecha por Victor Moya</p>
+	
+</footer>
+
+
+
+</body>
+</html>
